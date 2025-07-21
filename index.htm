@@ -1,72 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FUTURONA LLC</title>
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #f3f3f3; }
-    header { background-color: #131921; color: white; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; }
-    .logo { font-size: 1.5rem; font-weight: bold; display: flex; align-items: center; }
-    .logo img { height: 24px; margin-left: 8px; }
-    nav a { color: white; margin-left: 2rem; text-decoration: none; font-weight: bold; }
-    .search-bar { background-color: #fff; padding: 0.5rem 1rem; display: flex; justify-content: center; }
-    .search-bar input { width: 50%; padding: 0.5rem; }
-    .search-bar button { background-color: #f0c14b; border: 1px solid #a88734; padding: 0.5rem 1rem; cursor: pointer; }
-    main { padding: 2rem; text-align: center; }
-    .category { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; }
-    .card { background-color: white; padding: 1rem; border-radius: 8px; width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .card img { width: 100%; border-radius: 8px; }
-    .card h3 { margin-top: 1rem; }
-    .card a { display: inline-block; margin-top: 0.5rem; padding: 0.4rem 0.8rem; background-color: #007185; color: white; text-decoration: none; border-radius: 4px; }
-    footer { background-color: #131921; color: white; text-align: center; padding: 1rem; margin-top: 3rem; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>FUTURONA LLC</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0; padding: 0;
+background-color: #f5f5f5;
+}
+header {
+background-color: #232f3e;
+padding: 20px;
+color: white;
+text-align: center;
+}
+header h1 {
+margin: 0;
+font-size: 32px;
+}
+nav {
+background-color: #37475a;
+display: flex;
+justify-content: center;
+padding: 10px;
+}
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+}
+section {
+padding: 40px 20px;
+max-width: 1200px;
+margin: auto;
+background-color: white;
+margin-top: 20px;
+}
+.banner {
+background-image: url('https://via.placeholder.com/1200x400?text=Futurona+LLC+Wholesale');
+background-size: cover;
+height: 300px;
+margin-bottom: 20px;
+}
+.products, .about, .contact {
+margin-bottom: 40px;
+}
+footer {
+background-color: #232f3e;
+color: white;
+text-align: center;
+padding: 20px;
+}
+.button {
+background-color: #ffa41c;
+color: black;
+padding: 10px 20px;
+border: none;
+text-decoration: none;
+font-weight: bold;
+border-radius: 4px;
+}
+form input, form textarea {
+display: block;
+width: 100%;
+margin-bottom: 15px;
+padding: 10px;
+font-size: 16px;
+}
+</style>
 </head>
 <body>
-  <header>
-    <div class="logo">FUTURONA LLC <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" /></div>
-    <nav>
-      <a href="#">Contact</a>
-      <a href="#">WhatsApp</a>
-      <a href="#">Linktree</a>
-    </nav>
-  </header>
 
-  <div class="search-bar">
-    <input type="text" placeholder="Search products (available upon request)" />
-    <button>Search</button>
-  </div>
+<header>
+<h1>FUTURONA LLC</h1>
+<p>Distribución mayorista nacional en EE.UU.</p>
+</header>
 
-  <main>
-    <h1>National Wholesale Distribution</h1>
-    <p>FUTURONA LLC is a nationwide wholesale distributor in the United States. We specialize in high-quality products in beauty, home, and technology. Our full catalog is available upon request. Please contact us to receive wholesale pricing and product information.</p>
+<nav>
+<a href="#productos">Productos</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#contacto">Contacto</a>
+</nav>
 
-    <div class="category">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1600185366272-2b0956de77f3" alt="Beauty" />
-        <h3>Beauty Products</h3>
-        <p>Premium skincare and cosmetics for resellers.</p>
-        <a href="#">Email Us</a>
-      </div>
+<div class="banner"></div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1616401789248-2c2f653a2ae0" alt="Home Tech" />
-        <h3>Home Tech</h3>
-        <p>Smart devices and electronics for modern living.</p>
-        <a href="#">WhatsApp</a>
-      </div>
+<section class="products" id="productos">
+<h2>Categorías de Productos</h2>
+<ul>
+<li>Beauty & Skincare – Maquillaje, cuidado facial y corporal.</li>
+<li>Wellness – Suplementos y bienestar.</li>
+<li>Home Essentials – Artículos del hogar y limpieza.</li>
+</ul>
+<a href="https://wa.me/17862618830" class="button">Solicita nuestro catálogo</a>
+</section>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1586201375761-83865001e17b" alt="Kitchen" />
-        <h3>Kitchen tools items</h3>
-        <p>Kitchen tools and everyday essentials for your store.</p>
-        <a href="#">View Linktree</a>
-      </div>
-    </div>
-  </main>
+<section class="about" id="nosotros">
+<h2>¿Quiénes Somos?</h2>
+<p>FUTURONA LLC es una empresa registrada en Florida, especializada en ventas al mayor dentro del territorio estadounidense. Nos destacamos por brindar soluciones eficientes a minoristas y tiendas online que buscan productos confiables y con alta rotación.</p>
+</section>
 
-  <footer>
-    <p>&copy; 2025 FUTURONA LLC. All rights reserved.</p>
-  </footer>
+<section class="contact" id="contacto">
+<h2>Contáctanos</h2>
+<form>
+<input type="text" name="name" placeholder="Nombre completo" required />
+<input type="email" name="email" placeholder="Correo electrónico" required />
+<textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
+<button class="button" type="submit">Enviar mensaje</button>
+</form>
+</section>
+
+<footer>
+<p>📍 Miami, Florida | 📧 futuronallc@gmail.com | ☎️ WhatsApp: 786-261-8830</p>
+<p>© 2025 FUTURONA LLC. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
