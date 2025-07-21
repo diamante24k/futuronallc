@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FUTURONA – Wholesale Beauty & Tech</title>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FUTURONA LLC</title>
   <style>
-    body { margin:0; font-family: Arial, sans-serif; background: #fafafa; color: #333; }
-    header { background: #004b8d; color: white; padding: 1em 2em; display: flex; justify-content: space-between; align-items: center; }
-    header .logo { font-size: 1.5em; font-weight: bold; }
-    nav a { color: white; text-decoration: none; margin-left: 1.5em; font-weight: bold; }
-    .hero { background: #e0e0e0; padding: 4em 2em; text-align: center; }
-    .hero h1 { margin: 0; font-size: 2em; }
-    .hero p { font-size: 1.2em; }
-    .categories { display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; margin: 2em 0; padding: 0 1em; }
-    .cat-card { background: white; width: 280px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; }
-    .cat-card img { width:100%; height:180px; object-fit: cover; }
-    .cat-card h3 { margin: 1em 0 0.5em; }
-    .cat-card p { padding: 0 1em; margin-bottom: 1em; color: #555; }
-    .cat-card a { display: inline-block; margin-bottom: 1em; padding: 0.6em 1.2em; background: #004b8d; color: white; text-decoration: none; border-radius: 4px; }
-    footer { background: #004b8d; color: white; text-align: center; padding: 1em; }
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; color:#333; line-height:1.5; }
+    header { 
+      background: url('https://images.unsplash.com/photo-1581093588401-83439c2aa2da?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      height: 60vh; display:flex; align-items:center; justify-content:center;
+      color:white; text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    }
+    header h1 { font-size:3rem; }
+    .btn-cta { background:#f0c14b; color:#111; padding:0.8rem 1.5rem; text-decoration:none; font-weight:bold; border-radius:4px; }
+    nav { padding:1rem; text-align:center; background:#131921; }
+    nav a { color:white; margin:0 1rem; text-decoration:none; font-weight:bold; }
+    .sections { max-width:1200px; margin:2rem auto; padding:0 1rem; }
+    .cards { display:flex; flex-wrap: wrap; gap:1.5rem; justify-content:center; }
+    .card { background:white; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); width:300px; overflow:hidden; text-align:center; }
+    .card img { width:100%; height:200px; object-fit: cover; }
+    .card h3 { margin:1rem 0 0.5rem; }
+    .card p { padding:0 1rem; }
+    .card a { display:inline-block; margin:1rem 0 1.5rem; background:#007185; color:white; padding:0.6rem 1rem; border-radius:4px; text-decoration:none; }
+    footer { background:#131921; color:white; text-align:center; padding:2rem 1rem; margin-top:2rem; }
+    @media(max-width:600px){
+      .cards { flex-direction:column; align-items:center; }
+      header { height:40vh; }
+    }
   </style>
 </head>
 <body>
 
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Marcas</a>
+    <a href="#">Contacto</a>
+    <a href="#">WhatsApp</a>
+  </nav>
+
   <header>
-    <div class="logo">FUTURONA</div>
-    <nav>
-      <a href="#contacto">Contacto</a>
-      <a href="#productos">Productos</a>
-    </nav>
+    <div>
+      <h1>Distribución Nacional de Productos Premium</h1>
+      <p>Descubre nuestras marcas en belleza, hogar y tecnología</p>
+      <a href="#marcas" class="btn-cta">Ver Marcas</a>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Distribución Mayorista en Belleza y Tecnología</h1>
-    <p>Calidad, innovación y alcance nacional al servicio de tus negocios.</p>
-  </section>
-
-  <section id="productos" class="categories">
-    <div class="cat-card">
-      <img src="https://images.unsplash.com/photo-1600185366272-2b0956de77f3" alt="Productos de Belleza">
-      <h3>Productos de Belleza</h3>
-      <p>Cosméticos y cuidado personal premium para minoristas.</p>
-      <a href="mailto:futuronallc@gmail.com">Contáctanos</a>
+  <div class="sections" id="marcas">
+    <h2 style="text-align:center; margin-bottom:1.5rem;">Nuestras Marcas</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600185366272-2b0956de77f3?auto=format&fit=crop&w=800&q=80" alt="Beauty">
+        <h3>Beauty</h3>
+        <p>Cosméticos y cuidado personal de alta calidad para tus clientes.</p>
+        <a href="mailto:futuronallc@gmail.com">Contáctanos</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1616401789248-2c2f653a2ae0?auto=format&fit=crop&w=800&q=80" alt="Home Tech">
+        <h3>Home Tech</h3>
+        <p>Dispositivos y tecnología para el hogar moderno.</p>
+        <a href="https://wa.me/17862618830">WhatsApp</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1586201375761-83865001e17b?auto=format&fit=crop&w=800&q=80" alt="Kitchen">
+        <h3>Kitchen</h3>
+        <p>Utensilios y artículos de cocina para uso diario.</p>
+        <a href="#">Linktree</a>
+      </div>
     </div>
-
-    <div class="cat-card">
-      <img src="https://images.unsplash.com/photo-1616401789248-2c2f653a2ae0" alt="Tecnología para el Hogar">
-      <h3>Tech para el Hogar</h3>
-      <p>Dispositivos inteligentes y gadgets modernos para el día a día.</p>
-      <a href="https://wa.me/17862618830">WhatsApp</a>
-    </div>
-
-    <div class="cat-card">
-      <img src="https://images.unsplash.com/photo-1586201375761-83865001e17b" alt="Utensilios de Cocina">
-      <h3>Utensilios de Cocina</h3>
-      <p>Herramientas funcionales y elegantes para el hogar y tienda.</p>
-      <a href="https://linktr.ee/futurona">Linktree</a>
-    </div>
-  </section>
-
-  <section id="contacto" style="text-align:center; padding:2em 1em;">
-    <h2>Contacto</h2>
-    <p>Email: <a href="mailto:futuronallc@gmail.com">futuronallc@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/17862618830">+1 (786) 261‑8830</a></p>
-  </section>
+  </div>
 
   <footer>
-    <p>© 2025 FUTURONA LLC • Todos los derechos reservados • www.futurona.com</p>
+    <p>&copy; 2025 FUTURONA LLC • Email: futuronallc@gmail.com • WhatsApp: +1 786-261-8830</p>
   </footer>
 
 </body>
