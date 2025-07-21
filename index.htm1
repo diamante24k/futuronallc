@@ -1,79 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>FUTURONA LLC</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f3f3f3;
-color: #333;
-}
-header {
-background-color: #004080;
-color: white;
-padding: 20px;
-text-align: center;
-}
-section {
-padding: 20px;
-max-width: 800px;
-margin: auto;
-}
-h2 {
-color: #004080;
-}
-.button {
-display: inline-block;
-background-color: #28a745;
-color: white;
-padding: 10px 20px;
-margin-top: 10px;
-text-decoration: none;
-border-radius: 5px;
-}
-footer {
-background-color: #eee;
-text-align: center;
-padding: 10px;
-margin-top: 30px;
-}
-</style>
 </head>
 <body>
-
-<header>
-<h1>FUTURONA LLC</h1>
-<p>Soluciones en belleza, hogar y tecnología</p>
-</header>
-
-<section>
-<h2>¿Quiénes somos?</h2>
-<p>Somos una empresa innovadora dedicada a ofrecer productos de belleza, artículos para el hogar y tecnología de calidad.</p>
-
-<h2>Productos y servicios</h2>
-<ul>
-<li>Cosméticos y cuidado de la piel</li>
-<li>Electrodomésticos y gadgets</li>
-<li>Artículos para el hogar</li>
-</ul>
-
-<h2>Contáctanos</h2>
-<p>Email: futuronallc@gmail.com</p>
-<a class="button" href="https://wa.me/17862618830" target="_blank">Escríbenos por WhatsApp</a>
-</section>
-
-<footer>
-<p>Síguenos en redes:</p>
-<p>
-<a href="https://www.instagram.com/futuronallc" target="_blank">Instagram</a> |
-<a href="https://linktr.ee/futuronallc" target="_blank">Linktree</a>
-</p>
-<p>© 2025 FUTURONA LLC - Todos los derechos reservados.</p>
-</footer>
-
+<h1>Bienvenido a FUTURONA LLC</h1>
+<p>Empresa dedicada a la venta de productos de belleza, tecnología y hogar.</p>
+<p>Contáctanos: <a href="mailto:futuronallc@gmail.com">futuronallc@gmail.com</a></p>
+<p><a href="https://wa.me/17862618830">Escríbenos por WhatsApp</a></p>
+<p><a href="https://linktr.ee/futuronallc" target="_blank">Visita nuestro Linktree</a></p>
 </body>
 </html>
