@@ -7,41 +7,108 @@
 <style>
 body {
 margin: 0;
-font-family: 'Segoe UI', sans-serif;
-background-color: #f2f2f2;
-color: #333;
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
 }
+
+/* Navbar */
 header {
-background: url("https://images.unsplash.com/photo-1503602642458-232111445657") no-repeat center center/cover;
+background-color: #232f3e;
 color: white;
-padding: 60px 20px;
+padding: 15px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header h1 {
+margin: 0;
+font-size: 24px;
+letter-spacing: 1px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 20px;
+font-size: 14px;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+background: url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8") center/cover no-repeat;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-shadow: 1px 1px 4px black;
 text-align: center;
 }
-header h1 {
-font-size: 40px;
-margin: 0;
+
+.hero h2 {
+font-size: 36px;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 10px 20px;
+border-radius: 5px;
 }
+
+/* Content */
 main {
-max-width: 1000px;
+max-width: 1200px;
 margin: 40px auto;
-background: white;
-padding: 30px;
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-border-radius: 10px;
+padding: 0 20px;
 }
-.section-img {
-width: 100%;
-border-radius: 10px;
-margin-top: 20px;
+
+.intro {
+text-align: center;
+margin-bottom: 40px;
 }
-p {
+
+.intro p {
 font-size: 18px;
-line-height: 1.6;
+color: #333;
 }
+
+/* Product Cards */
+.products {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+}
+
+.card {
+background-color: white;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+text-align: center;
+}
+
+.card img {
+max-width: 100%;
+border-radius: 6px;
+}
+
+.card h3 {
+margin-top: 15px;
+font-size: 18px;
+color: #111;
+}
+
+.buttons {
+margin-top: 40px;
+text-align: center;
+}
+
 .buttons a {
 display: inline-block;
-margin: 15px 10px;
-padding: 12px 20px;
+margin: 10px;
+padding: 12px 18px;
 background-color: #0077cc;
 color: white;
 text-decoration: none;
@@ -49,29 +116,64 @@ border-radius: 6px;
 font-weight: bold;
 transition: background 0.3s;
 }
+
 .buttons a:hover {
 background-color: #005fa3;
+}
+
+footer {
+background-color: #232f3e;
+color: white;
+padding: 20px;
+text-align: center;
+font-size: 14px;
+margin-top: 40px;
 }
 </style>
 </head>
 <body>
 <header>
-<h1>Bienvenido a FUTURONA LLC</h1>
-<p>Productos de belleza, tecnología y hogar</p>
+<h1>FUTURONA LLC</h1>
+<nav>
+<a href="mailto:futuronallc@gmail.com">Contacto</a>
+<a href="https://wa.me/17862618830" target="_blank">WhatsApp</a>
+<a href="https://linktr.ee/futuronallc" target="_blank">Linktree</a>
+</nav>
 </header>
 
+<section class="hero">
+<h2>Productos de Belleza, Tecnología y Hogar</h2>
+</section>
+
 <main>
-<p>En FUTURONA LLC nos dedicamos a ofrecer productos de calidad que mejoran tu estilo de vida. Nuestra gama incluye artículos de belleza, dispositivos tecnológicos y soluciones para el hogar.</p>
+<div class="intro">
+<p>Bienvenidos a FUTURONA LLC. Somos una empresa enfocada en ofrecer soluciones de calidad para tu día a día, desde productos de cuidado personal hasta tecnología innovadora para el hogar.</p>
+</div>
 
-<img class="section-img" src="https://images.unsplash.com/photo-1607082349566-187342175e2c" alt="Productos de belleza" />
-
-<p>¿Quieres contactarnos o saber más? Escoge una de nuestras opciones:</p>
+<div class="products">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600181953601-1fef674edc3b" alt="Belleza">
+<h3>Productos de Belleza</h3>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581091870627-3e7f5efb25d5" alt="Tecnología">
+<h3>Tecnología para el Hogar</h3>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606811840826-0c1a4f6ad7a5" alt="Hogar">
+<h3>Artículos del Hogar</h3>
+</div>
+</div>
 
 <div class="buttons">
-<a href="mailto:futuronallc@gmail.com">📧 Correo</a>
-<a href="https://wa.me/17862618830" target="_blank">💬 WhatsApp</a>
-<a href="https://linktr.ee/futuronallc" target="_blank">🔗 Linktree</a>
+<a href="mailto:futuronallc@gmail.com">📧 Envíanos un correo</a>
+<a href="https://wa.me/17862618830" target="_blank">💬 Escríbenos por WhatsApp</a>
+<a href="https://linktr.ee/futuronallc" target="_blank">🔗 Visita nuestro Linktree</a>
 </div>
 </main>
+
+<footer>
+&copy; 2025 FUTURONA LLC – Todos los derechos reservados.
+</footer>
 </body>
 </html>
